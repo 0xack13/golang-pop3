@@ -24,6 +24,10 @@ Start mongodb server in a container:
 ```
 docker run -d -p 27017-27019:27017-27019 --name mongodb mongo:4.0.4
 docker exec -it 4608 bash
+```
+
+Initialize dummy users and a message:
+```
 mongo
 use robmail
 db.users.insert({username:"test", password:"password", messages: [{header:"dummy header", message: "dummy message", subject:"dummy subject"}]})

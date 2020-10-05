@@ -8,3 +8,14 @@ https://github.com/r0stig/basic-smtpserver
 Follow me in Twitter:
 > r0stig
 
+
+Installation:
+
+```
+go get ./...
+```
+
+Run the pop3 server:
+```
+go run main.go database.go
+```

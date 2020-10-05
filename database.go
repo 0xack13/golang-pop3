@@ -33,7 +33,7 @@ var (
 
 // Connect to the database
 func connectDatabase() {
-	sess, err := mgo.Dial("192.168.1.4")
+	sess, err := mgo.Dial("localhost")
 	if err != nil {
 		fmt.Println("Couldn't connect to the MongoDB")
 	}
